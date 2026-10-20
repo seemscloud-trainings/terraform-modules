@@ -1,5 +1,4 @@
 variable "network" {
-  description = "Configuration for google_compute_network; null optional values retain provider defaults. Custom subnet mode is the module default; auto_create_subnetworks can be overridden."
   type = object({
     auto_create_subnetworks                   = optional(bool, false)
     bgp_always_compare_med                    = optional(bool)

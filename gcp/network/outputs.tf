@@ -1,5 +1,4 @@
 output "network" {
-  description = "Resource attributes, excluding deprecated provider fields."
   value = {
     auto_create_subnetworks                   = google_compute_network.main.auto_create_subnetworks
     bgp_always_compare_med                    = google_compute_network.main.bgp_always_compare_med
@@ -27,7 +26,6 @@ output "network" {
 }
 
 output "subnetworks" {
-  description = "Resource attributes, excluding deprecated provider fields."
   value = { for key, resource in google_compute_subnetwork.main : key => {
     allow_subnet_cidr_routes_overlap = resource.allow_subnet_cidr_routes_overlap
     creation_timestamp               = resource.creation_timestamp

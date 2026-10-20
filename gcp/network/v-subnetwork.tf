@@ -1,5 +1,4 @@
 variable "subnetworks" {
-  description = "Configuration for google_compute_subnetwork; null optional values retain provider defaults. Map keys are stable Terraform instance keys. Omit network to use the network created by this module."
   type = map(object({
     allow_subnet_cidr_routes_overlap = optional(bool)
     deletion_policy                  = optional(string)

@@ -1,5 +1,4 @@
 variable "subnets" {
-  description = "Configuration for aws_subnet; null optional values retain provider defaults. Map keys are stable Terraform instance keys. Omit vpc_id to use the network created by this module."
   type = map(object({
     assign_ipv6_address_on_creation                = optional(bool)
     availability_zone                              = optional(string)

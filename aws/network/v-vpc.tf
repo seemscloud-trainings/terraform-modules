@@ -1,5 +1,4 @@
 variable "vpc" {
-  description = "Configuration for aws_vpc; null optional values retain provider defaults."
   type = object({
     assign_generated_ipv6_cidr_block     = optional(bool)
     cidr_block                           = optional(string)
