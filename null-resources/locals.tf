@@ -11,6 +11,7 @@ locals {
     project_id        = var.project_id
     project_name      = var.project_name
     region_name       = var.region_name
+    environment_name  = var.environment_name
   }
 
   triggers = merge(

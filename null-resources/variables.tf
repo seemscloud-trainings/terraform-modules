@@ -56,3 +56,8 @@ variable "region_name" {
   type    = string
   default = null
 }
+
+variable "environment_name" {
+  type    = string
+  default = null
+}
